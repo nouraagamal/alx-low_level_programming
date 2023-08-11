@@ -3,30 +3,30 @@
 /**
  * main - Entry point
  *
- * Description: print all alphabets in lowercase then uppercase.
+ * Description: print alphabet in lowercase then in uppercase
  *
  * Return: Always 0 (Success)
 */
 
 int main(void)
 {
-	char c = 'a';
-	char C = 'A';
+	char ch = 'a';
+	char CH = 'A';
 
 	/*print a - z*/
-	while (c <= 'z')
+	while (ch <= 'z')
 	{
-		putchar(c);
-		c++;
+		putchar(ch);
+		ch++;
 	{
 
 	/*print A - Z*/
-	while (C <= 'Z')
+	while (CH <= 'Z')
 	{
-		putchar(C);
-		C++;
+		putchar(CH);
+		CH++;
 	}
 	putchar('\n');
 
-return (0);
+	return (0);
 }
