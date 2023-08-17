@@ -3,10 +3,10 @@
 /**
  * mul - multiply 2 integers
  *
- * @a: first integer
- * @b: second integer
+ * @a: first input
+ * @b: second input
  *
- * return: results
+ * Return: return results
 */
 
 int mul(int a, int b)
