@@ -4,7 +4,7 @@
  * print_line - prints a straight line
  *
  * @n: is the number of times the _ character
- * 	sould be printed
+ *	sould be printed
 */
 
 void print_line(int n)
