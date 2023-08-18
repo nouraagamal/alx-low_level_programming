@@ -9,14 +9,17 @@
 
 void print_line(int n)
 {
-	int lnChr;
-
 	if (n <= 0)
-		_putchar('\n');
-	else
 	{
+		_putchar('\n');
+	} else
+	{
+		int lnChr;
+
 		for (lnChr = 1; lnChr <= n; lnChr++)
+		{
 			_putchar('_');
+		}
 		_putchar('\n');
 	}
 }
