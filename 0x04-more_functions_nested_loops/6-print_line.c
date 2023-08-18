@@ -3,8 +3,8 @@
 /**
  * print_line - prints a straight line
  *
- * @n: number of times the _ character sould be printed
- *
+ * @n: is the number of times the _ character
+ * 	sould be printed
 */
 
 void print_line(int n)
