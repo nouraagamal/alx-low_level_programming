@@ -1,9 +1,10 @@
 #include "main"
 
 /**
- * print_line - print a stright line
+ * print_line - prints a straight line
  *
- * @n: number of times the character sould be printed
+ * @n: number of times the _ character sould be printed
+ *
 */
 
 void print_line(int n)
