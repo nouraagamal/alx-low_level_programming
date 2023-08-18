@@ -5,6 +5,7 @@
  *
  * @n: is the number of times the _ character
  *	sould be printed
+ * Return: Always 0 (Success)
 */
 
 void print_line(int n)
@@ -19,4 +20,5 @@ void print_line(int n)
 			_putchar('_');
 		_putchar('\n');
 	}
+	return (0);
 }
