@@ -6,7 +6,7 @@
  * terminating null byte (\0), to the buffer pointed to by dest
  * Description: copy the string pointed to
  * @dest: char parameter
- * &src: char parameter
+ * @src: char parameter
  *
  * Return: pointer to 'dest'
 */
