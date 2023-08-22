@@ -2,20 +2,20 @@
 #include <stdlib.h>
 
 /**
- * _putchar - program that prints "_putchar"
+ * main - entry point
  *
- * @c: input char parameter
+ * description: prints a string ehich is "_putchar"
  *
  * Return: Always 0 (Success)
 */
 
-int _putchar(char c)
+int main(void)
 {
-	c[] = "_putchar";
-	int chr;
+	char s[] = "_putchar";
+	int character;
 
-	for (chr = 0; chr < 8; chr++)
-		_putchar(c[chr]);
+	for (character = 0; character < 8; character++)
+		_putchar(s[character]);
 	_putchar('\n');
 
 	return (0);
