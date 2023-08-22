@@ -15,8 +15,8 @@ int main(void)
 	int character;
 
 	for (character = 0; character < 8; character++)
-		_putchar(s[character]);
-	_putchar('\n');
+		putchar(s[character]);
+	putchar('\n');
 
 	return (0);
 }
