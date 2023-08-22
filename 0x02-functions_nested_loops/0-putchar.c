@@ -1,18 +1,21 @@
 #include <stdio.h>
+#include <stdlib>
+
 /**
- *main - entry
+ * _putchar - program that prints "_putchar"
  *
- *Description: a program that prints _putchar
+ * @c: input char parameter
  *
- *Return: Always 0 (Success)
+ * Return: Always 0 (Success)
 */
-int main(void)
+
+int _putchar(char c)
 {
-	char str[] = "_putchar";
+	c = "_putchar";
 	int chr;
 
 	for (chr = 0; chr < 8; chr++)
-		_putchar(str[chr]);
+		_putchar(c[chr]);
 	_putchar('\n');
 
 	return (0);
