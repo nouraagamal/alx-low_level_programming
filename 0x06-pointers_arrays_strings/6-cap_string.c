@@ -17,5 +17,7 @@ char *cap_string(char *str)
 		if (str[c] >= 'a' && str[c] <= 'z')
 			str[c] = str[c] - 32;
 		c++;
+		else if (str[c] = " \t\n,.!?\"()[]")
+			return (str[c]);
 	}
 }
