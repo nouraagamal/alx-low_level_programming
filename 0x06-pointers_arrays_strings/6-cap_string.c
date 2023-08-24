@@ -10,4 +10,12 @@
 
 char *cap_string(char *str)
 {
+	int c = 0;
 
+	while (str[c] != '\0')
+	{
+		if (str[c] >= 'a' && str[c] <= 'z')
+			str[c] = str[c] - 32;
+		c++;
+	}
+}
