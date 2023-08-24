@@ -21,12 +21,13 @@ int _strcmp(char *s1, char *s2)
 			s2++;
 		}
 		else if ((*s1 == '\0' && *s2 != '\0')
-			|| (*s1 != '\0' && *s2 == '\0') || *s1 != *s2)
+			|| (*s1 != '\0' && *s2 == '\0') || (*s1 != *s2))
 		{
 			f = 1;
-			return (0);
 		}
 	}
 	if (f == 0)
 		return (1);
+	else
+		return (0);
 }
