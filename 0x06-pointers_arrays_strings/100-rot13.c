@@ -19,7 +19,7 @@ char *rot13(char *s)
 	{
 		for (i = 0; i <= 52; i++)
 		{
-			if (*s = a[i])
+			if (*s == a[i])
 			{
 				*s = b[i];
 				break;
