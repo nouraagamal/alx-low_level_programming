@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strncat - a function that copies a string
+ * *_strncpy - a function that copies a string
  *
  * @dest: input char
  * @src: input char
