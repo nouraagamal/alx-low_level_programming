@@ -11,13 +11,24 @@
 char *cap_string(char *str)
 {
 	int c = 0;
+	int a;
+	char *b;
 
-	while (str[c] != '\0')
+	b = " \t\n,.!?\"()[]";
+
+	for (c = 0; str[c] != '\0'; c++)
 	{
-		if (str[c] >= 'a' && str[c] <= 'z')
-			str[c] = str[c] - 32;
-		c++;
-		else if (str[c] = " \t\n,.!?\"()[]")
-			return (str[c]);
+		if (!c)
+		{
+			if (str[c] >= 'a' && str[c] <= 'z')
+				str[c] = str[c] - 32;
+		}
+		else
+		{
+			for (a = 0; c[a] != '\0'; a++)
+				if (str[c - 1] == b[a] && str[c] >= 'a' && str[c] <= 'z')
+					str[c] = str[c] - 32;
+		}
 	}
+	return (str);
 }
