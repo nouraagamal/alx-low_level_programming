@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_last_digit.c - last didit of nomber
+ * print_last_digit - function prints last digit of nomber
  *
- * @n: input number
+ * @a: input number
  *
  * Return: last digit in the number
 */
@@ -18,4 +18,4 @@ int print_last_digit(int a)
 		i = (a % 10);
 	_putchar(i + '0');
 	return (i);
-}	
+}
