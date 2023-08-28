@@ -5,7 +5,7 @@
  *
  * @s: pointer
  * @b: the constant to put
- * @a: nomber of bytes to use
+ * @n: nomber of bytes to use
  *
  * Return: s
 */
