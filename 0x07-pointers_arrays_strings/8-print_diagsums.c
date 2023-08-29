@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_diagsums - prints the sum of the two
@@ -6,8 +7,6 @@
  *
  * @a: array of integer
  * @size: size of array
- *
- * Return: nothing (print sum)
 */
 
 void print_diagsums(int *a, int size)
