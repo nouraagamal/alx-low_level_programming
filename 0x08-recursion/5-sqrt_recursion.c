@@ -8,14 +8,14 @@
  * Return: int
 */
 
-int sqrt(int n, int m);
+int squrt(int n, int m);
 int _sqrt_recursion(int n)
 {
-	return (square(n, 1));
+	return (squrt(n, 1));
 }
 
 /**
- * sqrt - finds sqrt
+ * squrt - finds sqrt
  *
  * @n: input int
  * @m: square root
@@ -23,12 +23,12 @@ int _sqrt_recursion(int n)
  * Return: int
 */
 
-int sqrt(int n, int m)
+int squrt(int n, int m)
 {
 	if (m * m == n)
 		return (m);
 	else if (m * m < n)
-		return (sqrt(n, m + 1));
+		return (squrt(n, m + 1));
 	else
 		return (-1);
 }
