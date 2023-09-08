@@ -4,9 +4,8 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int i = -1;
 
-	do {
-		i++;
-		dest[i] = src[i];
-	} while (src[i] != '\0');
+	if (src[i] != '\0')
+		for (i = 0; i < n; i++)
+			dest[i] = src[i];
 	return (dest);
 }
