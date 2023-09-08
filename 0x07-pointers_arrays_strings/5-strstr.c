@@ -2,25 +2,24 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	unsigned int i = 0, j = 0;
+	unsigned int i = 0, k = 0;
 
 	while (haystack[i])
 	{
-		while (needle[j] && (haystack[i] == needle[0]))
+		while (needle[k] && (haystack[i] == needle[0]))
 		{
-			if (haystack[i + j] == needle[j])
-				j++;
+			if (haystack[i + k] == needle[k])
+				k++;
 			else
 				break;
 		}
-		if (needle[j])
+		if (needle[k])
 		{
 			i++;
-			j = 0;
+			k = 0;
 		}
 		else
 			return (haystack + i);
 	}
 	return (0);
-
 }
