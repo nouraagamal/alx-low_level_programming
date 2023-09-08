@@ -8,7 +8,7 @@
  * @argv: array of pointers to the arguments.
  *
  * Return: If one of the numbers contains non-digits - 1.
- * 	Otherwise - 0.
+ *	Otherwise - 0.
 */
 
 int main(int argc, char *argv[])
