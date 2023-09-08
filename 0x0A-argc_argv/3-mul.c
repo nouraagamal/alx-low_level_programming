@@ -14,7 +14,7 @@
 int main(int argc, char *argv[])
 {
 	int i;
-i
+
 	if (argc == 3)
 	{
 		i = atoi(argv[1]) * atoi(argv[2]);
@@ -22,7 +22,7 @@ i
 	}
 	else
 	{
-		printf("error\n");
+		printf("Error\n");
 		return (1);
 	}
 	return (0);
