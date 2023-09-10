@@ -13,11 +13,11 @@
 
 int *array_range(int min, int max)
 {
-	char *c;
+	int *c;
 	int size, i;
 
 	size = (max - min) + 1;
-	c = malloc(sizeof (int) * size);
+	c = malloc((sizeof(int)) * (size));
 	if (ptr == NULL || min > max)
 		return ('\0');
 	for (i = 0; i < size; i++)
