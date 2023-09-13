@@ -7,7 +7,7 @@
 *
 * @argc: length of command line arguments
 *
-* @argv: pointer
+* @argv: double pointer to cli arguments
 *
 * Return: 0
 */
@@ -21,19 +21,18 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
-	if (argv[2][1])
+	if (argv[2][1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
 	}
 	fn = get_op_func(argv[2]);
+
 	if (fn == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	printf("%d\n",fn(a, b));
+	printf("%d\n", fn(atoi(argv[1]), atoi(argv[3])));
 	return (0);
 }
