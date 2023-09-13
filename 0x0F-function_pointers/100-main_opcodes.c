@@ -9,27 +9,23 @@
  *
  * Return: Always 0
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int n, i;
-	int (*prog)(int, char **) = &main;
+	char *n = (char *)main;
+	int b;
 
-	if (argc == 2)
-	{
-		n = atoi(argv[1]);
-		if (n < 0)
-		{
-			printf("Error\n");
-			exit(2);
-		}
-		for (i = 0; i < n; i++)
-			printf("%02x%c",
-					(unsigned char)*((char *)prog + i), i <  - 1 ? ' ' : '\n');
-	}
-	else
+	if (argc != 2)
 	{
 		printf("Error\n");
 		exit(1);
 	}
+	b = atoi(argv[1]);
+	if (b < 0)
+	{
+		printf("Error\n");
+		exit(2);
+	}
+	while (b--)
+		printf("%02x%c", *p++, b? " " : "\n");
 	return (0);
 }
