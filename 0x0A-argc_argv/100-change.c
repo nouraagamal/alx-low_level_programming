@@ -37,5 +37,6 @@ int main(int argc, char *argv[])
 		z += x / y;
 		x %= y;
 	}
-	printf("%d\n", z);
+	printf("%d\n",z);
+	return (0);
 }
