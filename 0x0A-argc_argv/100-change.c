@@ -38,5 +38,4 @@ int main(int argc, char *argv[])
 		x %= y;
 	}
 	printf("%d\n", z);
-	return (0);
 }
