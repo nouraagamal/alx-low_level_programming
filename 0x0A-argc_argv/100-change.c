@@ -12,7 +12,7 @@
 
 int main(int argc, char *argv[])
 {
-	int x, y = 0, z = 0;
+	int x, y, z = 0;
 
 	if (argc != 2)
 	{
@@ -35,6 +35,6 @@ int main(int argc, char *argv[])
 		z += x / y;
 		x %= y;
 	}
-	printf("%d\n",z);
-	return (0); 
+	printf("%d\n", z);
+	return (0);
 }
