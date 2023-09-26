@@ -10,12 +10,12 @@
 
 void free_list(list_t *head)
 {
-	list_t *current;
+	list_t *curr;
 
-	while ((current = head) != NULL)
+	while ((curr = head) != NULL)
 	{
 		head = head->next;
-		free(current->str);
-		free(current);
+		free(curr->str);
+		free(curr);
 	}
 }
