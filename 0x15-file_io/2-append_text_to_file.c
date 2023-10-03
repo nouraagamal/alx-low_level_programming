@@ -11,7 +11,7 @@
 
 int append_text_to_file(const char *filename, char *text_content)
 {
-	ssize_t openfile, bytes, len;
+	ssize_t openfile, bytes, len = 0;
 
 	if (!filename)
 		return (-1);
@@ -23,8 +23,8 @@ int append_text_to_file(const char *filename, char *text_content)
 		while (text_content[len])
 			len++;
 		bytes = write(openfile, text_content, len);
-		if (bytes == -1)
-			return (-1);
+		if (bytes < 0)
+		return (-1);
 	}
 	close(openfile);
 	return (1);
