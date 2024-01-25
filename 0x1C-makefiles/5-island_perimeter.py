@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """returns the perimeter of the island described in grid"""
 
+
 def island_perimeter(grid):
     """
     calculate the perimeter
     Args: grid matrix of 1s and 0s
     """
     p = 0
-
     for row in range(len(grid)):
         for col in range(len(grid[0])):
             if grid[row][col] == 1:
