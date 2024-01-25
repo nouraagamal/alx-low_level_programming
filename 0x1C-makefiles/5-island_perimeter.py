@@ -2,7 +2,10 @@
 """returns the perimeter of the island described in grid"""
 
 def island_perimeter(grid):
-    """calcukate the perimeter"""
+    """
+    calculate the perimeter
+    Args: grid matrix of 1s and 0s
+    """
     p = 0
 
     for row in range(len(grid)):
